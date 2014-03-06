@@ -6,7 +6,7 @@
     <string name="hello_world">Hello world!</string>
     <string name="take_photo">Take a Photo</string>
     <string name="view_gallery">View Gallery</string>
-    <string name="vote">Fuck you, GIT!</string>
+    <string name="vote">Vote</string>
     <string name="btnIntend">Take (big) Picture</string>
     <string name="btnIntendS">Take (small) Picture</string>
     <string name="btnIntendV">Take Video</string>

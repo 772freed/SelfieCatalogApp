@@ -11,8 +11,8 @@
 
     <Button
         android:id="@+id/button1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
         android:background="@drawable/button_gradient"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
@@ -20,13 +20,23 @@
         android:text="@string/take_photo"
         android:onClick="gotoActivity" />
 
+     <Button
+        android:id="@+id/button2"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_toLeftOf="@+id/button1"
+        android:layout_centerHorizontal="true"
+		android:layout_marginTop="39dp"
+        android:background="@drawable/button_gradient"
+        android:onClick="openGallery"
+        android:text="@string/view_gallery" />
+    
     <Button
         android:id="@+id/button3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button2"
-        android:layout_below="@+id/button2"
-        android:layout_marginTop="18dp"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_toRightOf="@+id/button1"
+        android:layout_marginTop="39dp"
         android:textStyle="normal"
         android:textSize="24sp"
         android:textColor="@android:color/white"
@@ -40,29 +50,17 @@
         android:id="@+id/imageView1"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_below="@+id/button3"
+        android:layout_below="@+id/button1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="27dp"
         android:src="@drawable/antartica1" />
 
- 
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/button1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="17dp"
-        android:background="@drawable/button_gradient"
-        android:onClick="openGallery"
-        android:text="@string/view_gallery" />
 
   <Gallery
       android:id="@+id/gallery1"
       android:layout_width="fill_parent"
       android:layout_height="wrap_content"
-      android:layout_alignLeft="@+id/button3"
+
       android:layout_alignParentBottom="true"
       android:layout_below="@+id/imageView1"
       android:layout_marginTop="22dp" />
