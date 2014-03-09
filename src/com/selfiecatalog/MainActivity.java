@@ -19,7 +19,7 @@ import android.database.Cursor;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Toast;
-
+import android.app.Activity;
 
 public class MainActivity extends Activity {
 	

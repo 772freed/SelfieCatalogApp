@@ -34,26 +34,31 @@ public final class R {
         public static final int antartica7=0x7f020007;
         public static final int antartica8=0x7f020008;
         public static final int antartica9=0x7f020009;
-        public static final int button_gradient=0x7f02000a;
-        public static final int camera=0x7f02000b;
-        public static final int ic_launcher=0x7f02000c;
-        public static final int icon=0x7f02000d;
+        public static final int bg_main=0x7f02000a;
+        public static final int button_gradient=0x7f02000b;
+        public static final int camera=0x7f02000c;
+        public static final int gradient_background=0x7f02000d;
+        public static final int ic_launcher=0x7f02000e;
+        public static final int icon=0x7f02000f;
+        public static final int wwe_logo=0x7f020010;
     }
     public static final class id {
-        public static final int action_settings=0x7f090009;
-        public static final int btnIntend=0x7f090005;
-        public static final int btnIntendS=0x7f090006;
-        public static final int btnIntendV=0x7f090007;
+        public static final int action_settings=0x7f09000a;
+        public static final int btnIntend=0x7f090006;
+        public static final int btnIntendS=0x7f090007;
+        public static final int btnIntendV=0x7f090008;
         public static final int button1=0x7f090001;
         public static final int button2=0x7f090000;
         public static final int button3=0x7f090002;
         public static final int gallery1=0x7f090004;
         public static final int imageView1=0x7f090003;
-        public static final int videoView1=0x7f090008;
+        public static final int imgLogo=0x7f090005;
+        public static final int videoView1=0x7f090009;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int main=0x7f030001;
+        public static final int activity_splash=0x7f030001;
+        public static final int main=0x7f030002;
     }
     public static final class menu {
         public static final int main=0x7f080000;
