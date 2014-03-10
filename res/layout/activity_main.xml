@@ -8,14 +8,15 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/activity_main_back"
     tools:context=".MainActivity" >
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-		android:layout_marginTop="0dp"
-		android:background="@android:color/darker_gray"
-        android:layout_weight="1" >
+		android:background="@color/horizontal_layout"
+		android:layout_marginTop="@dimen/buttons_layout_marginTop"
+		android:layout_weight="1" >
      	
 
 
@@ -31,7 +32,10 @@
         android:typeface="serif"
         android:background="@drawable/button_gradient"
         android:onClick="gotoActivity1"
-        android:text="@string/view_gallery" />
+        android:text="@string/view_gallery"
+        android:layout_marginLeft="@dimen/button_gap"
+        android:layout_marginRight="@dimen/button_gap"
+         />
        
      <Button
         android:id="@+id/button1"
@@ -45,7 +49,8 @@
         android:typeface="serif"
         android:background="@drawable/button_gradient"
         android:text="@string/take_photo"
-        android:onClick="gotoActivity" />
+        android:onClick="gotoActivity" 
+        />
      
     <Button
         android:id="@+id/button3"
@@ -58,7 +63,10 @@
         android:textColor="@android:color/white"
         android:typeface="serif"
         android:background="@drawable/button_gradient"
-        android:text="@string/vote" />
+        android:text="@string/vote"
+        android:layout_marginLeft="@dimen/button_gap"
+        android:layout_marginRight="@dimen/button_gap" />
+
 
 </LinearLayout>
 
@@ -66,7 +74,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
 		android:layout_marginTop="10dp"
-		android:background="@android:color/darker_gray"
+		android:background="@color/horizontal_layout"
         android:layout_weight="1" >
     
     <ImageView
@@ -80,7 +88,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="10dp"
-		android:background="@android:color/darker_gray"
+		android:background="@color/horizontal_layout"
         android:layout_weight="1" >
     
   <Gallery
