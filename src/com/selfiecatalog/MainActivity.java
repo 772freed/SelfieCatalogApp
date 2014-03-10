@@ -12,6 +12,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
+import android.provider.Telephony.Sms.Intents;
 import android.app.Activity;
 import android.content.ContentValues;
 import android.content.Intent;
@@ -92,7 +93,7 @@ public class MainActivity extends Activity {
 			return imageView;
 		}
 	}
-
+	
 
 
 	
@@ -119,6 +120,11 @@ public class MainActivity extends Activity {
 	intent.putExtra(MediaStore.EXTRA_VIDEO_QUALITY, 1);
 		startActivityForResult(intent, CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE);
 		
+		
+	}
+	public void gotoActivity1(View v){
+		Intent intent = new Intent(this, galleryActivity.class);
+		startActivity(intent);
 		
 	}
 
