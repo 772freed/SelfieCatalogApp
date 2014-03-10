@@ -124,9 +124,9 @@ public class MainActivity extends Activity {
 	}
 	public void gotoActivity1(View v){
 		
-		/*Intent intent = new Intent(this, galleryActivity.class);
-		startActivity(intent);*/
-		Toast.makeText(getApplicationContext(), "Ohad gay", Toast.LENGTH_SHORT).show();
+		Intent intent = new Intent(this, GalleryActivity.class);
+		startActivity(intent);
+		Toast.makeText(getApplicationContext(), "Open Gallery", Toast.LENGTH_SHORT).show();
 	}
 
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {

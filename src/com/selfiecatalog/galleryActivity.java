@@ -1,33 +1,42 @@
 package com.selfiecatalog;
 
+
+
+import android.os.Bundle;
 import android.app.Activity;
 import android.content.Context;
-import android.os.Bundle;
+import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView.OnItemClickListener;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
-import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.Toast;
+import android.widget.AdapterView.OnItemClickListener;
 
-public class galleryActivity extends Activity {
+public class GalleryActivity extends Activity {
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_gallery);
-
 		GridView gridview = (GridView) findViewById(R.id.gridview);
 	    gridview.setAdapter(new ImageAdapter(this));
 
 	    gridview.setOnItemClickListener(new OnItemClickListener() {
 	        public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
-	            Toast.makeText(galleryActivity.this, "" + position, Toast.LENGTH_SHORT).show();
+	            Toast.makeText(GalleryActivity.this, "" + position, Toast.LENGTH_SHORT).show();
 	        }
 	        
 	    });
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.gallery, menu);
+		return true;
 	}
 	public class ImageAdapter extends BaseAdapter {
 	    private Context mContext;
@@ -74,5 +83,7 @@ public class galleryActivity extends Activity {
 	    };
 	}
 	}
+
+
 
 

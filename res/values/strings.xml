@@ -13,5 +13,9 @@
     <string name="cannot">Cannot</string>
     <string name="album_name">CameraSample</string>
     <string name="title_activity_test_">Test_Activity</string>
+    <string name="title_activity_gayllery">GaylleryActivity</string>
+    <string name="title_activity_gallery">GalleryActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 
 </resources>
