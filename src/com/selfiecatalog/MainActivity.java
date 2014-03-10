@@ -101,7 +101,7 @@ public class MainActivity extends Activity {
 	static final File imageRoot = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES), appDirectoryName);
 	
 	
-	public void gotoActivity(View v) {
+	public void gotoActivity(View v) {//for camera
 		
 	
 	
@@ -122,7 +122,7 @@ public class MainActivity extends Activity {
 		
 		
 	}
-	public void gotoActivity1(View v){
+	public void gotoActivity1(View v){// for gallery
 		
 		Intent intent = new Intent(this, GalleryActivity.class);
 		startActivity(intent);
