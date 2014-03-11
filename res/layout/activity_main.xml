@@ -11,12 +11,16 @@
     android:background="@color/activity_main_back"
     tools:context=".MainActivity" >
 
+    
+    <!-- Main Buttons -->
+    
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
 		android:background="@color/horizontal_layout"
 		android:layout_marginTop="@dimen/buttons_layout_marginTop"
-		android:layout_weight="1" >
+		android:layout_weight="1"
+		android:gravity="bottom" >
      	
 
 
@@ -24,7 +28,8 @@
         android:id="@+id/button2"
         android:layout_width="0dp"
         android:layout_weight="1"
-        android:drawableTop="@drawable/camera"
+        android:drawableTop="@drawable/gallery_icon"
+        android:drawablePadding="10dp"
         android:layout_height="wrap_content"
         android:textStyle="normal"
         android:textSize="12sp"
@@ -35,13 +40,15 @@
         android:text="@string/view_gallery"
         android:layout_marginLeft="@dimen/button_gap"
         android:layout_marginRight="@dimen/button_gap"
+
          />
        
      <Button
         android:id="@+id/button1"
         android:layout_width="0dp"
         android:layout_weight="1"
-        android:drawableTop="@drawable/camera"
+        android:drawableTop="@drawable/camera_icon"
+        android:drawablePadding="10dp"
         android:layout_height="wrap_content"
                 android:textStyle="normal"
         android:textSize="12sp"
@@ -56,7 +63,8 @@
         android:id="@+id/button3"
         android:layout_width="0dp"
         android:layout_weight="1"
-        android:drawableTop="@drawable/camera"
+        android:drawableTop="@drawable/vote_icon"
+        android:drawablePadding="10dp"
         android:layout_height="wrap_content"
         android:textStyle="normal"
         android:textSize="12sp"
@@ -70,6 +78,23 @@
 
 </LinearLayout>
 
+        <!-- Gallery view -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+		android:background="@color/horizontal_layout"
+        android:layout_weight="1"
+        android:gravity="top" >
+    
+  <Gallery
+      android:id="@+id/gallery1"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent" />
+</LinearLayout>
+    
+    
+ <!-- Image view and Login -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -77,11 +102,11 @@
 		android:background="@color/horizontal_layout"
         android:layout_weight="1" >
     
-    <ImageView
+   <!--  <ImageView
         android:id="@+id/imageView1"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:src="@drawable/antartica1" />
+        android:src="@drawable/antartica1" /> -->
 
     <Button
         android:id="@+id/button4"
@@ -90,18 +115,8 @@
         android:background="@drawable/login_1"
          />
 
+   
 </LinearLayout>
 
-     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="10dp"
-		android:background="@color/horizontal_layout"
-        android:layout_weight="1" >
-    
-  <Gallery
-      android:id="@+id/gallery1"
-      android:layout_width="match_parent"
-      android:layout_height="match_parent" />
-</LinearLayout>
+     
 </LinearLayout>

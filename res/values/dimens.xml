@@ -4,7 +4,7 @@
     <dimen name="activity_horizontal_margin">0dp</dimen>
     <dimen name="activity_vertical_margin">10dp</dimen>
     <dimen name="button_gap">1dp</dimen>
-    <dimen name="buttons_layout_marginTop">60dp</dimen>
+    <dimen name="buttons_layout_marginTop">0dp</dimen>
 
 
 </resources>
