@@ -111,7 +111,12 @@ public class MainActivity extends Activity {
 
 
 	
-
+	public void gotoActivity1(View v){// for gallery
+		
+		Intent intent = new Intent(this, GalleryActivity.class);
+		startActivity(intent);
+		Toast.makeText(getApplicationContext(), "Open Gallery", Toast.LENGTH_SHORT).show();
+	}
 	
 	public void gotoActivity(View v){
 	    Intent camIntent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
